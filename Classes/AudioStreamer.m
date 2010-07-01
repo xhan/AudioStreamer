@@ -899,8 +899,8 @@ cleanup:
 		packetBufferSize = 0;
 		self.state = AS_INITIALIZED;
 
-		internalThread = nil;
 		[internalThread release];
+		internalThread = nil;
 	}
 
 	[pool release];
