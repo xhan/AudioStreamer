@@ -1346,8 +1346,10 @@ cleanup:
 		
 		UInt8 bytes[kAQDefaultBufSize];
 		CFIndex length;
+#ifdef SHOUTCAST_METADATA
 		UInt8 bytesNoMetaData[kAQDefaultBufSize];
 		int lengthNoMetaData = 0;
+#endif
 		
 		@synchronized(self)
 		{
